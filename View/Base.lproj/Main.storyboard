@@ -21,7 +21,7 @@
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="Jrk-ug-nIv">
                                 <rect key="frame" x="15" y="59" width="384" height="469.5"/>
-                                <color key="backgroundColor" red="0.082395069299999998" green="0.086270891129999999" blue="0.086274690929999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="4Th-fm-i0V">
                                         <variation key="heightClass=compact" constant="250"/>
@@ -33,14 +33,14 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="Q2G-nc-NaF"/>
                                         <exclude reference="4Th-fm-i0V"/>
+                                        <exclude reference="Q2G-nc-NaF"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=compact">
                                     <mask key="constraints">
-                                        <exclude reference="Q2G-nc-NaF"/>
                                         <exclude reference="4Th-fm-i0V"/>
+                                        <exclude reference="Q2G-nc-NaF"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular">
@@ -298,7 +298,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alA-Cm-cYO">
                                         <rect key="frame" x="278" y="0.0" width="50.5" height="50.5"/>
-                                        <color key="backgroundColor" red="0.2536263466" green="0.53216069939999999" blue="0.58824712040000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.74509805439999999" green="0.37254902719999999" blue="0.40000003579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                         <state key="normal" title="AC">
                                             <color key="titleColor" red="1" green="0.99998801950000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -312,7 +312,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wu0-du-hUW">
                                         <rect key="frame" x="333.5" y="0.0" width="50.5" height="50.5"/>
-                                        <color key="backgroundColor" red="0.2536263466" green="0.53216069939999999" blue="0.58824712040000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.90196073060000004" green="0.6549019814" blue="0.2588235438" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                         <state key="normal" title="=">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -357,38 +357,38 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="sDR-Ou-fsu"/>
                                 <exclude reference="ByL-oR-efT"/>
+                                <exclude reference="sDR-Ou-fsu"/>
                                 <exclude reference="bG5-A5-l5y"/>
-                                <exclude reference="vDe-WF-LU9"/>
-                                <exclude reference="hkH-Ok-m7C"/>
-                                <exclude reference="WPd-BO-kPI"/>
                                 <exclude reference="Ls5-xT-kTo"/>
+                                <exclude reference="WPd-BO-kPI"/>
                                 <exclude reference="fCZ-lD-Z9I"/>
+                                <exclude reference="hkH-Ok-m7C"/>
+                                <exclude reference="vDe-WF-LU9"/>
                                 <exclude reference="XBz-DE-p79"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
                             <mask key="constraints">
+                                <exclude reference="ByL-oR-efT"/>
                                 <exclude reference="rwM-Gl-Pbn"/>
                                 <include reference="sDR-Ou-fsu"/>
-                                <exclude reference="ByL-oR-efT"/>
                                 <exclude reference="5Xd-cd-a0V"/>
                                 <exclude reference="OE9-Pf-aKW"/>
                                 <include reference="bG5-A5-l5y"/>
+                                <include reference="Ls5-xT-kTo"/>
+                                <exclude reference="NL1-Pj-pLm"/>
+                                <include reference="WPd-BO-kPI"/>
+                                <exclude reference="cfr-Tb-InG"/>
+                                <include reference="fCZ-lD-Z9I"/>
+                                <include reference="hkH-Ok-m7C"/>
+                                <exclude reference="nIZ-bE-5KI"/>
                                 <exclude reference="s3Y-u0-Xrk"/>
                                 <include reference="vDe-WF-LU9"/>
-                                <include reference="hkH-Ok-m7C"/>
-                                <include reference="WPd-BO-kPI"/>
-                                <exclude reference="NL1-Pj-pLm"/>
-                                <include reference="Ls5-xT-kTo"/>
-                                <include reference="fCZ-lD-Z9I"/>
-                                <exclude reference="nIZ-bE-5KI"/>
-                                <exclude reference="cfr-Tb-InG"/>
+                                <exclude reference="LHM-iM-LGn"/>
                                 <include reference="XBz-DE-p79"/>
                                 <exclude reference="Zx5-Es-uzF"/>
                                 <exclude reference="cdz-8i-EXY"/>
-                                <exclude reference="LHM-iM-LGn"/>
                             </mask>
                         </variation>
                     </view>
