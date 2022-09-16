@@ -20,9 +20,37 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    // MARK: - Actions
+
+    @IBAction func tappedNumberButton(_ sender: UIButton) {
+        calculator.addNumber(sender.tag)
+    }
     
+    @IBAction func tappedAdditionButton(_ sender: UIButton) {
+        let success = calculator.addOperator(operand: "+")
+    }
+    
+    @IBAction func tappedSubstractionButton(_ sender: UIButton) {
+        let success = calculator.addOperator(operand: "-")
+    }
 
+    @IBAction func tappedMultiplyButton(_ sender: UIButton) {
+        let success = calculator.addOperator(operand: "x")
+    }
 
+    @IBAction func tappedDivideButton(_ sender: UIButton) {
+        let success = calculator.addOperator(operand: "/")
+    }
 
+    @IBAction func tappedPointButton(_ sender: UIButton) {
+        let success = calculator.addPoint()
+    }
 
+    @IBAction func tappedEqualButton(_ sender: UIButton) {
+        let success = calculator.computeExpression()
+    }
+
+    @IBAction func tappedResetButton(_ sender: UIButton) {
+        calculator.resetExpression()
+    }
 }

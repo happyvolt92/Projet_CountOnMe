@@ -157,34 +157,7 @@ class CalculatorTestCase: XCTestCase {
 
     // MARK: - Substractions Tests
 
-    func testGivenExpressionHasOneNumber_WhenAddingMinusSign_ThenAddingMinusSignIsPossibleAndExpressionIsTheNumberAndMinusSign() {
-        calculator.addNumber(1)
-
-        let operatorAdded = calculator.addOperator(operand: "-")
-
-        XCTAssertTrue(operatorAdded)
-        XCTAssertEqual(calculator.currentExpression, "1 - ")
-    }
-
-    func testGivenExpressionIsEmpty_WhenAddingMinusSign_ThenAddingMinusSignIsNotPossibleAndExpressionIsEmpty() {
-        let operatorAdded = calculator.addOperator(operand: "-")
-
-        XCTAssertFalse(operatorAdded)
-        XCTAssertEqual(calculator.currentExpression, "")
-    }
-
-    func testGivenExpressionHasAResult_WhenAddingMinusSign_ThenAddingMinusSignIsNotPossibleAndExpressionIsTheSame() {
-        calculator.addNumber(5)
-        _ = calculator.addOperator(operand: "-")
-        calculator.addNumber(2)
-        _ = calculator.computeExpression()
-
-        let operatorAdded = calculator.addOperator(operand: "-")
-
-        XCTAssertFalse(operatorAdded)
-        XCTAssertEqual(calculator.currentExpression, "5 - 2 = 3.0")
-    }
-
+    
     // MARK: - Multiplications Test
 
 
@@ -193,6 +166,7 @@ class CalculatorTestCase: XCTestCase {
 
     // MARK: - Priorities
 
+    
     // MARK: - Point Tests
 
 
