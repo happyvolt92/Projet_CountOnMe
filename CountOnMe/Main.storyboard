@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0iM-wj-Qhb">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="Jrk-ug-nIv">
-                                <rect key="frame" x="15" y="59" width="384" height="469.5"/>
+                                <rect key="frame" x="15" y="63" width="384" height="465.5"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="4Th-fm-i0V">
@@ -411,6 +411,13 @@
                         <outletCollection property="operandButtons" destination="xQS-oH-1dj" collectionClass="NSMutableArray" id="rp0-Z3-oEQ"/>
                         <outletCollection property="operandButtons" destination="alA-Cm-cYO" collectionClass="NSMutableArray" id="wNn-IQ-cmv"/>
                         <outletCollection property="operandButtons" destination="Wu0-du-hUW" collectionClass="NSMutableArray" id="YJI-Ir-SB4"/>
+                        <outletCollection property="operandButton" destination="8Ud-1Y-nCZ" collectionClass="NSMutableArray" id="Isy-K7-3KG"/>
+                        <outletCollection property="operandButton" destination="8jh-Ul-M79" collectionClass="NSMutableArray" id="t4j-UC-PIs"/>
+                        <outletCollection property="operandButton" destination="hjB-4M-3ua" collectionClass="NSMutableArray" id="jbq-tT-7va"/>
+                        <outletCollection property="operandButton" destination="xQS-oH-1dj" collectionClass="NSMutableArray" id="Xfm-qQ-ULG"/>
+                        <outletCollection property="operandButton" destination="PaN-Ye-cFP" collectionClass="NSMutableArray" id="CTa-CX-ffA"/>
+                        <outletCollection property="operandButton" destination="alA-Cm-cYO" collectionClass="NSMutableArray" id="hVn-Qs-ALO"/>
+                        <outletCollection property="operandButton" destination="Wu0-du-hUW" collectionClass="NSMutableArray" id="Khx-MO-USS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NAA-Pu-mho" sceneMemberID="firstResponder"/>
