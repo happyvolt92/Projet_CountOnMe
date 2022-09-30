@@ -68,13 +68,7 @@ class ViewController: UIViewController {
         alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
         return self.present(alertVC, animated: true, completion: nil)
     }
-    
-    private func setTextViewBehavior() {
-        textView.isSelectable = false
-        textView.isEditable = false
-        textView.isScrollEnabled = true
-    }
-    
+
     // MARK: - disabling futur probllems
     
     /// now text view is on readOnly !!!

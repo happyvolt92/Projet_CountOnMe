@@ -32,6 +32,7 @@ class Calculator {
         return elements.count >= 3
     }
 
+    // to test
     private var expressionHaveAtLeastOneNumber: Bool {
         return elements.count >= 1 && Double(elements.first ?? "") != nil
     }

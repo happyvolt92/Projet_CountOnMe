@@ -7,8 +7,9 @@
 //
 
 
-import XCTest
+
 @testable import CountOnMe
+import XCTest
 
 class CalculatorTestCase: XCTestCase {
 
@@ -245,9 +246,6 @@ class CalculatorTestCase: XCTestCase {
 
             XCTAssertFalse(result)
         }
-    
-    // MARK: - Point Tests
-    
     
     // MARK: - Priorities
     
