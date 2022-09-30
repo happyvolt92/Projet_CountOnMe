@@ -42,7 +42,7 @@
 		1FA43BDC224E569A00F565CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FA43BE3224E569A00F565CB /* CountOnMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountOnMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FA43BEE224E569A00F565CB /* CountOnMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountOnMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FA43BF4224E569A00F565CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = CountOnMeUITests/Info.plist; sourceTree = SOURCE_ROOT; };
+		1FA43BF4224E569A00F565CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = CountOnMe/Info.plist; sourceTree = SOURCE_ROOT; };
 		5315AC7928D475DA002BFCD3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5315AC7A28D475FA002BFCD3 /* calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculator.swift; sourceTree = "<group>"; };
 		53F6E38828D4787C00B59568 /* calculatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculatorTest.swift; sourceTree = "<group>"; };
@@ -94,16 +94,48 @@
 		1FA43BD1224E569900F565CB /* CountOnMe */ = {
 			isa = PBXGroup;
 			children = (
+				DF6DA5BE28E6F74200593026 /* supporting files */,
+				DF6DA5BD28E6F71900593026 /* view */,
+				DF6DA5BC28E6F71300593026 /* controller */,
+				DF6DA5BB28E6F70E00593026 /* model */,
 				1FA43BF4224E569A00F565CB /* Info.plist */,
-				1FA43BD2224E569900F565CB /* AppDelegate.swift */,
-				1FA43BD4224E569900F565CB /* ViewController.swift */,
-				1FA43BD9224E569A00F565CB /* Assets.xcassets */,
-				1FA43BDB224E569A00F565CB /* LaunchScreen.storyboard */,
-				5315AC7928D475DA002BFCD3 /* Main.storyboard */,
-				5315AC7A28D475FA002BFCD3 /* calculator.swift */,
 				53F6E38828D4787C00B59568 /* calculatorTest.swift */,
 			);
 			path = CountOnMe;
+			sourceTree = "<group>";
+		};
+		DF6DA5BB28E6F70E00593026 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				5315AC7A28D475FA002BFCD3 /* calculator.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		DF6DA5BC28E6F71300593026 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				1FA43BD4224E569900F565CB /* ViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		DF6DA5BD28E6F71900593026 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				5315AC7928D475DA002BFCD3 /* Main.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		DF6DA5BE28E6F74200593026 /* supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				1FA43BD2224E569900F565CB /* AppDelegate.swift */,
+				1FA43BD9224E569A00F565CB /* Assets.xcassets */,
+				1FA43BDB224E569A00F565CB /* LaunchScreen.storyboard */,
+			);
+			path = "supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,7 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HCJ92G387G;
+				DEVELOPMENT_TEAM = KMMD247NN3;
 				INFOPLIST_FILE = "$(SRCROOT)/CountOnMeUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,7 +484,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HCJ92G387G;
+				DEVELOPMENT_TEAM = KMMD247NN3;
 				INFOPLIST_FILE = "$(SRCROOT)/CountOnMeUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
