@@ -53,4 +53,35 @@ class ViewController: UIViewController {
     @IBAction func tappedResetButton(_ sender: UIButton) {
         calculator.resetExpression()
     }
+    
+    // MARK: - MAKE IT WORK
+    
+    /// show it in the textIView,
+    @objc private func displayCalculs() {
+        textView.text = calculator.currentExpression
+    }
+    
+    // MARK: - Alert
+
+    private func incorrectExpressionAlert() {
+        let alertVC = UIAlertController(title: "something wrong", message: "Please enter valid expression", preferredStyle: .alert)
+        alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        return self.present(alertVC, animated: true, completion: nil)
+    }
+    
+    private func setTextViewBehavior() {
+        textView.isSelectable = false
+        textView.isEditable = false
+        textView.isScrollEnabled = true
+    }
+    
+    // MARK: - disabling futur probllems
+    
+    /// now text view is on readOnly !!!
+    private func setTextViewBehavior() {
+        textView.isSelectable = false
+        textView.isEditable = false
+        textView.isScrollEnabled = true
+    }
+
 }
