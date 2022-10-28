@@ -124,7 +124,7 @@ class Calculator {
 
         // Iterate over operations while there is a multiplication or division :
         while localElements.contains("x") || localElements.contains("/") {
-            // check at what index we have a "x" or a "/" :
+            // check which index we have a "x" or a "/" :
             guard let index = localElements.firstIndex(where: { $0 == "x" || $0 == "/" }) else {
                 return nil
             }

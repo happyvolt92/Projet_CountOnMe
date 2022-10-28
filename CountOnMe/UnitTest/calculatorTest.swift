@@ -266,5 +266,52 @@ class CalculatorTestCase: XCTestCase {
             XCTAssertNotEqual(calculator.currentExpression, "10 / 2 + 5 x 2 - 2 = 18.0")
 
         }
+    
+    // MARK: - Point Tests
+
+    func testGivenExpressionHasANumber_WhenAddingAPoint_ThenItIsPossibleAdExpressionIsNumberAndPoint() {
+        calculator.addNumber(9)
+
+        let pointAdded = calculator.addPoint()
+
+        XCTAssertTrue(pointAdded)
+        XCTAssertEqual(calculator.currentExpression, "9.")
+    }
+
+    func testGivenExpressionIsEmpty_WhenAddingAPoint_ThenItIsNotPossible() {
+        let pointAdded = calculator.addPoint()
+
+        XCTAssertFalse(pointAdded)
+    }
+
+    func testGivenExpressionHasANumberAndAPoint_WhenAddingOperator_ThenItIsNotPossible() {
+        calculator.addNumber(9)
+        _ = calculator.addPoint()
+
+        let operatorAdded = calculator.addOperator(operand: "+")
+
+        XCTAssertFalse(operatorAdded)
+    }
+
+    func testGivenExpressionHasANumberAndAPoint_WhenComputing_ThenItIsNotPossible() {
+        calculator.addNumber(9)
+        _ = calculator.addPoint()
+
+        let result = calculator.computeExpression()
+
+        XCTAssertFalse(result)
+    }
+
+    func testGivenExpressionHasAlreadyAResult_WhenAddingAPoint_ThenItIsNotPossible() {
+        calculator.addNumber(9)
+        _ = calculator.addOperator(operand: "+")
+        calculator.addNumber(9)
+        _ = calculator.computeExpression()
+
+        let pointAdded = calculator.addPoint()
+
+        XCTAssertFalse(pointAdded)
+    }
+    
 
 }

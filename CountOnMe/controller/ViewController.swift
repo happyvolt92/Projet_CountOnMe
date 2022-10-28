@@ -64,7 +64,7 @@ class ViewController: UIViewController {
     // MARK: - Alert
 
     private func incorrectExpressionAlert() {
-        let alertVC = UIAlertController(title: "something wrong", message: "Please enter valid expression", preferredStyle: .alert)
+        let alertVC = UIAlertController(title: "error", message: "Please enter valid expression", preferredStyle: .alert)
         alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
         return self.present(alertVC, animated: true, completion: nil)
     }
