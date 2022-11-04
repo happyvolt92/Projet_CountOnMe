@@ -18,8 +18,6 @@ class ViewController: UIViewController {
     // MARK: - Property
 
     let calculator = Calculator()
-    
-    // MARK: -  Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,14 +26,11 @@ class ViewController: UIViewController {
         setAspect(for: textView)
         setTextViewBehavior()
     }
-    
-    
     // MARK: - Actions
 
     @IBAction func tappedNumberButton(_ sender: UIButton) {
         calculator.addNumber(sender.tag)
     }
-    
     @IBAction func tappedAdditionButton(_ sender: UIButton) {
         let success = calculator.addOperator(operand: "+")
 
@@ -43,7 +38,6 @@ class ViewController: UIViewController {
             incorrectExpressionAlert()
         }
     }
-    
     @IBAction func tappedSubstractionButton(_ sender: UIButton) {
         let success = calculator.addOperator(operand: "-")
 
@@ -59,7 +53,6 @@ class ViewController: UIViewController {
             incorrectExpressionAlert()
         }
     }
-
 
     @IBAction func tappedDivideButton(_ sender: UIButton) {
         let success = calculator.addOperator(operand: "/")
